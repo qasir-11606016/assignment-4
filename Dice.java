@@ -1,7 +1,7 @@
 public class Dice {
 			
 	private DiceValue value;
-	// check first comments
+	
 	public Dice() {
 		value =  DiceValue.getRandom();
 	}
