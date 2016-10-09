@@ -10,6 +10,7 @@ public class TC1 {
      Game game = new Game(d1, d2, d3);
      int bet= 5;
      int limit =0;
+     int winning=5;
 	@Test
 	public void test() {
 	int actual=	player.getBalance();
@@ -50,6 +51,11 @@ public class TC1 {
 		int expected =player.getLimit();
 		assertEquals(limit,expected);
 		}
-	
+	public void test8() {
+		player.receiveWinnings(winning);
+	int actual =player.getBalance();
+	int expected =105;
+	assertEquals(actual,expected);;
+	}
 	
 }
