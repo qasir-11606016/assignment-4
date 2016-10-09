@@ -11,7 +11,7 @@ public class Main {
         Dice d2 = new Dice();
         Dice d3 = new Dice();
 
-        Player player ;
+        Player player =new Player("Fred",100);
         Game game = new Game(d1, d2, d3);
         List<DiceValue> cdv = game.getDiceValues();
 
@@ -23,7 +23,7 @@ public class Main {
             int winCount = 0;
             int loseCount = 0;
             
-            for (int i = 0; i < 3; i++)
+            for (int i = 0; i < 100; i++)
             {
             	String name = "Fred";
             	int balance = 100;
