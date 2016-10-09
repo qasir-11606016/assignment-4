@@ -8,5 +8,11 @@ public class TC4 {
     int bet= 5;
     int limit =0;
     int winning=5;
+    @Test
+	public void test() {
+	int actual=	player.getBalance();
+	int expected=2;
+	assertEquals(actual,expected);
+	}
 
 }
