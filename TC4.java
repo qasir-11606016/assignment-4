@@ -13,6 +13,12 @@ public class TC4 {
 	int actual=	player.getBalance();
 	int expected=2;
 	assertEquals(actual,expected);
+	}4@Test
+	public void test8() {
+		player.receiveWinnings(winning);
+	int actual =player.getBalance();
+	int expected =1+bet;
+	assertEquals(actual,expected);
 	}
 
 }
