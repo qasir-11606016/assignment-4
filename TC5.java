@@ -47,5 +47,11 @@ public class TC5 {
  		boolean expected =true;
  		assertEquals(actual,expected);
  		}
+     @Test
+ 	public void test7() {
+ 			player.setLimit(limit);
+ 		int expected =player.getLimit();
+ 		assertEquals(limit,expected);
+ 		}
 
 }
