@@ -23,5 +23,11 @@ public class TC5 {
  	String expected="Fred";
  	assertEquals(actual,expected);
  	}
+     @Test
+ 	public void test3() {
+ 	int actual=	player.getLimit();
+ 	int expected=0;
+ 	assertEquals(actual,expected);
+ 	}
 
 }
