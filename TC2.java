@@ -3,7 +3,7 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 public class TC2 {
-	public class TC1 {
+
 		 Dice d1 = new Dice();
 	     Dice d2 = new Dice();
 	     Dice d3 = new Dice();
