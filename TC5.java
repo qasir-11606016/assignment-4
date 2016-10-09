@@ -11,9 +11,11 @@ public class TC5 {
      int bet= 5;
      int limit =0;
      int winning=5;
-	@Test
-	public void test() {
-		fail("Not yet implemented");
-	}
+     @Test
+ 	public void test() {
+ 	int actual=	player.getBalance();
+ 	int expected=100;
+ 	assertEquals(actual,expected);
+ 	}
 
 }
