@@ -41,21 +41,31 @@ public class TC1 {
 	boolean expected =true;
 	assertEquals(actual,expected);
 	}
+	@Test
 	public void test6() {
 		boolean actual=	player.balanceExceedsLimitBy(bet);
 		boolean expected =true;
 		assertEquals(actual,expected);
 		}
+	@Test
 	public void test7() {
 			player.setLimit(limit);
 		int expected =player.getLimit();
 		assertEquals(limit,expected);
 		}
+	@Test
 	public void test8() {
 		player.receiveWinnings(winning);
 	int actual =player.getBalance();
-	int expected =105;
-	assertEquals(actual,expected);;
+	int expected =110;
+	assertEquals(actual,expected);
+	}
+	@Test
+	public void test9() {
+		player.takeBet(bet);
+	int actual =player.getBalance();
+	int expected =95;
+	assertEquals(actual,expected);
 	}
 	
 }
