@@ -52,7 +52,7 @@ public class TC3 {
 			}
 		@Test
 		public void test8() {
-			player.receiveWinnings(winning);
+			player.receiveWinnings(winning,bet);
 		int actual =player.getBalance();
 		int expected =1+bet;
 		assertEquals(actual,expected);
