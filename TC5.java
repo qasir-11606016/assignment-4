@@ -53,5 +53,12 @@ public class TC5 {
  		int expected =player.getLimit();
  		assertEquals(limit,expected);
  		}
+     @Test
+ 	public void test8() {
+ 		player.receiveWinnings(winning,bet);
+ 	int actual =player.getBalance();
+ 	int expected =10;
+ 	assertEquals(actual,expected);
+ 	}
 
 }
