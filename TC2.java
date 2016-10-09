@@ -15,5 +15,10 @@ public class TC2 {
 	 	int expected=0;
 	 	assertEquals(actual,expected);
 	 	}
-
+	 	@Test
+		public void test2() {
+		String actual=	player.getName();
+		String expected="Fred";
+		assertEquals(actual,expected);
+		}
 }
