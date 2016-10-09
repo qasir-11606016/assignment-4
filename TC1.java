@@ -26,4 +26,16 @@ public class TC1 {
 	int expected=0;
 	assertEquals(actual,expected);
 	}
+	@Test
+	public void test4() {
+	int actual=	player.getBalance();
+	int expected=100;
+	assertEquals(actual,expected);
+	}
+	@Test
+	public void test5() {
+	boolean actual=	player.balanceExceedsLimit();
+	boolean expected =false;
+	assertEquals(actual,expected);
+	}
 }
