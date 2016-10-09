@@ -17,8 +17,13 @@ public class TC4 {
 	public void test8() {
 		player.receiveWinnings(winning);
 	int actual =player.getBalance();
-	int expected =1+bet;
+	int expected =2+bet;
 	assertEquals(actual,expected);
 	}
+	public void test6() {
+		boolean actual=	player.balanceExceedsLimitBy(bet);
+		boolean expected =false;
+		assertEquals(actual,expected);
+		}
 
 }
