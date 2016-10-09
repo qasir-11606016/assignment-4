@@ -4,7 +4,7 @@ import org.junit.Test;
 
 public class TC4 {
 
-	Player player =new Player("Fred",3);
+	Player player =new Player("Fred",4);
     int bet= 5;
     int limit =0;
     int winning=5;
@@ -18,7 +18,7 @@ public class TC4 {
 	public void test8() {
 		player.receiveWinnings(winning);
 	int actual =player.getBalance();
-	int expected =3+bet;
+	int expected =4+bet;
 	assertEquals(actual,expected);
 	}
 	public void test6() {
