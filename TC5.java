@@ -35,5 +35,17 @@ public class TC5 {
  	int expected=5;
  	assertEquals(actual,expected);
  	}
+     @Test
+ 	public void test5() {
+ 	boolean actual=	player.balanceExceedsLimit();
+ 	boolean expected =true;
+ 	assertEquals(actual,expected);
+ 	}
+     @Test
+ 	public void test6() {
+ 		boolean actual=	player.balanceExceedsLimitBy(bet);
+ 		boolean expected =true;
+ 		assertEquals(actual,expected);
+ 		}
 
 }
