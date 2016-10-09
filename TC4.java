@@ -16,7 +16,7 @@ public class TC4 {
 	}
 	@Test
 	public void test8() {
-		player.receiveWinnings(winning);
+		player.receiveWinnings(winning,bet);
 	int actual =player.getBalance();
 	int expected =5+bet;
 	assertEquals(actual,expected);
