@@ -8,6 +8,8 @@ public class TC1 {
      Dice d3 = new Dice();
      Player player =new Player("Fred",100);
      Game game = new Game(d1, d2, d3);
+     int bet= 5;
+     int limit =0;
 	@Test
 	public void test() {
 	int actual=	player.getBalance();
@@ -39,8 +41,15 @@ public class TC1 {
 	assertEquals(actual,expected);
 	}
 	public void test6() {
-		boolean actual=	player.balanceExceedsLimitBy(5);
+		boolean actual=	player.balanceExceedsLimitBy(bet);
 		boolean expected =true;
 		assertEquals(actual,expected);
 		}
+	public void test7() {
+			player.setLimit(limit);
+		int expected =player.getLimit();
+		assertEquals(limit,expected);
+		}
+	
+	
 }
